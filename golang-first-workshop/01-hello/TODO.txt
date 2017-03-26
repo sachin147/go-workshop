@@ -1,0 +1,6 @@
+- create a file hello.go
+- package line
+- func main()
+- fmt.Println("hello")
+- import "fmt"
+

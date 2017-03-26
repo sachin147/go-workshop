@@ -1,0 +1,26 @@
+{{ template "base" . }}
+
+{{ define "title" }}welcome!{{ end }}
+{{ define "content" }}
+
+
+    
+        <!-- TODO: refactor to base.html -->
+        <title>hello template</title>
+    
+    
+        <h1>hello template</h1>
+        <h2>Path: {{ .Path }}</h2>
+        <h2>Method: {{ .Method }}</h2>
+        <p>Raw: {{ .Raw }}</p>
+        <p>Now: {{ .Now.Format "2006-01-02 03:04 PM" }}</p>
+        <h2>Query</h2>
+        {{ range $key, $value := .Query}}
+            <dl><dt>{{ $key }}</dt><dd>{{ $value }}</dd></dl>
+        {{ end }}
+        <h2>Headers</h2>
+        {{ range $key, $value := .Header}}
+            <dl><dt>{{ $key }}</dt><dd>{{ $value }}</dd></dl>
+        {{ end }}
+    {{end}}
+

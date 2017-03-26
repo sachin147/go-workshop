@@ -1,0 +1,3 @@
+- create a page: /cookies: list all cookies
+- create a form to add a cookie
+- create an api to delete a cookie

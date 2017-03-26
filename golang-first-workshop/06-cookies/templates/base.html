@@ -1,0 +1,17 @@
+{{ define "base" }}
+<html>
+    <head>
+        <title>{{ template "title" . }}</title>
+    </head>
+    <body>
+        {{ template "content" . }}
+        <footer>
+            <hr>
+            <a href="/">Home</a>
+            <!-- add cookie link -->
+            | <a href="/about">About Us</a>
+            | <a href="/contact">Contact</a>
+        </footer>
+    </body>
+</html>
+{{ end }}

@@ -1,0 +1,4 @@
+- import net/http
+- write a handler function that uses fmt.Fprintf() to print hello world
+- add the handler to /hello
+- start the server

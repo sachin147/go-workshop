@@ -1,0 +1,4 @@
+- show request path on /path/
+- show request method on /method
+- show query string on /query. show just the value of query param named x.
+- show headers on /headers

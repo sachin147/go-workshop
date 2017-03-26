@@ -1,0 +1,3 @@
+- create about and contact pages (handler, url and template)
+- have a base template
+- reuse blocks

@@ -1,0 +1,9 @@
+- pass headers to a template and show the data
+- load template from disc
+- pass path, query and header to template
+- in place struct definition and initialization
+- use range in template
+- use if condition in template
+- pass Raw (template.HTML) to template, use it
+- pass current time
+- show current time in "2017-03-26 2:30PM" format

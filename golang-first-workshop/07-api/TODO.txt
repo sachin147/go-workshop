@@ -1,0 +1,5 @@
+- refactor the info part into a function
+- version of / at /api/info, returning json
+- /api/cookies: return all cookies
+- /api/cookie-add: add a cookie
+- /api/cookie-delete: delete a cookie

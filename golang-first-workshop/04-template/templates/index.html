@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>requestinfo</h1>
+        <h4>Method {{.Method}}</h4>
+        <h4>Path {{.Path}}</h4>
+        <h4>Query</h4>
+        <ul>
+            {{range $key, $value := .Query}}
+                <li>{{$key}} : {{$value}}</li>
+            {{end}}
+        </ul>
+        <h4>Header</h4>
+        <ul>
+            {{range $key, $value := .Header}}
+                <li>{{$key}} : {{$value}}</li>
+            {{end}}
+        </ul>
+        <p>Raw: {{.Raw}}</p>
+        <p>Time: {{.Now}}</p>
+    </body>
+</html>

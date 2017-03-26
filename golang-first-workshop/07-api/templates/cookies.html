@@ -1,0 +1,25 @@
+{{ template "base" . }}
+
+{{ define "title" }}Cookies{{ end }}
+{{ define "content" }}
+    <h1>Cookies</h1>
+    <!-- TODO: Show existing cookies -->
+    <ul>
+        {{ range . }}
+            <li>
+                {{ .Name }}: {{ .Value }}
+                <form method="POST" action="/cookie-delete" style="display: inline">
+                    <input type="hidden" name="name" value="{{ .Name }}">
+                    <input type="submit" value="X">
+                </form>
+            </li>
+        {{ end }}
+    </ul>
+    <form method="POST" action="/cookie-add">
+        <hr>
+        <h2>Add Cookie</h2>
+        Name of cookie: <input type="text" name="name"><br>
+        Value: <input type="text" name="value"><br>
+        <input type="submit" value="Add Cooke">
+    </form>
+{{ end }}
